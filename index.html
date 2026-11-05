@@ -1,0 +1,314 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Apple | Manzanas Enchiladas</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+    <!-- Formas de pago -->
+<div class="seccion-pago">
+    <h2>💳Formas de pago</h2>
+
+    <label for="formaPago">Selecciona tu forma de pago:</label>
+
+    <select id="formaPago">
+        <option value="">Selecciona una opción</option>
+        <option value="Efectivo">Efectivo</option>
+        <option value="Transferencia bancaria">Transferencia bancaria</option>
+        <option value="Pago al recibir">Pago al recibir</option>
+    </select>
+
+    <button type="button" id="finalizarCompra">
+        Finalizar compra
+    </button>
+</div>
+
+   <!-- Ventana de bienvenida -->
+<div id="bienvenida" class="modal-bienvenida">
+    <div class="contenido-bienvenida">
+        <h2>¡Bienvenidos a Moon Apple!</h2>
+        <p>Un antojo dulce, ácido y picosito.</p>
+        <p>¡Gracias por visitar nuestra página!</p>
+        <button type="button" onclick="document.getElementById('bienvenida').remove()">
+            Aceptar
+        </button>
+    </div>
+</div>
+    <header id="inicio" class="encabezado">
+        <div class="titulo-logo">
+            <h1>Moon Apple</h1>
+            <img src="imagenes/logotipo.jpg" alt="logotipo" class="logo">
+        </div>
+        <p>Un antojo dulce, ácido y picosito</p>
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="index.html#articulo">Información</a>
+        <a href="index.html#contacto">Contacto</a>
+    </nav>
+
+   
+    <main>
+
+       
+        <section class="slider" aria-label="Galería de productos">
+            <div class="diapositivas">
+
+                <div class="diapositiva activa">
+                    <img src="imagenes/manzanas1.jpg" alt="Manzanas sencillas">
+                    <div class="texto-slider">
+                        <h2>Bienvenidos a Manzanas tres Lunas</h2>
+                        <p>El sabor de la fruta con un toque de chile.</p>
+                    </div>
+                </div>
+
+                <div class="diapositiva">
+                    <img
+                        src="imagenes/manzanas2.jpg"
+                        alt="Manzanas preparadas"
+                    >
+                    <div class="texto-slider">
+                        <h2>Ingredientes seleccionados</h2>
+                        <p>Preparamos nuestros snacks para disfrutar cada bocado.</p>
+                    </div>
+                </div>
+
+                <div class="diapositiva">
+                    <img
+                        src="imagenes/manzanas3.jpg"
+                        alt="Manzanas con picafresas"
+                    >
+                    <div class="texto-slider">
+                        <h2>Un antojo diferente</h2>
+                        <p>Encuentra tu combinación favorita.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+      
+        <section id="nosotros" class="seccion">
+            <h2>¿Quiénes somos?</h2>
+            <p>
+                Moon Apple es un proyecto escolar dedicado a la preparación
+                y venta de manzanas enchiladas. Buscamos ofrecer un snack
+                atractivo, con sabores dulces, ácidos y picositos, utilizando
+                ingredientes seleccionados y una presentación llamativa.
+            </p>
+        </section>
+
+       
+        <section id="productos" class="seccion catalogo">
+    <h2 class="titulo-seccion">Nuestros productos</h2>
+    <p class="subtitulo">
+        ¡Encuentra tu antojo favorito en Moon Apple!
+    </p>
+
+
+    <div class="productos">
+
+        <!-- TARJETA 1 -->
+        <article class="tarjeta">
+            <img src="imagenes/manzanas1.jpg"
+                 alt="Manzana de tamarindo y Miguelito">
+            <div class="contenido">
+                <h3>Manzana Tamarindo Mix</h3>
+                <p>Manzana cubierta de tamarindo y Miguelito.</p>
+                <span class="precio">$30.00 MXN</span>
+                <button type="button" class="agregar"
+                data-producto="Manzana Tamarindo Mix"
+                data-precio="30">
+                Agregar al carrito
+            </button>
+            </div>
+        </article>
+
+        <!-- TARJETA 2 -->
+        <article class="tarjeta">
+            <img src="imagenes/manzanas2.0.jpg"
+                 alt="Manzana preparada">
+            <div class="contenido">
+                <h3>Manzana Preparada</h3>
+                <p>Manzana con tamarindo, gomitas, cacahuates, zanahoria y jícama.</p>
+                <span class="precio">$60.00 MXN</span>
+                <button type="button" class="agregar"
+                data-producto="Manzana Preparada"
+                data-precio="60">
+                Agregar al carrito
+            </button>
+            </div>
+        </article>
+
+        <!-- TARJETA 3 -->
+        <article class="tarjeta">
+            <img src="imagenes/picafresa.jpg"
+                 alt="Manzana cubierta de Picafresas">
+            <div class="contenido">
+                <h3>Manzana de Picafresas</h3>
+                <p>Manzana con chamoy y chile, cubierta de Picafresas.</p>
+                <span class="precio">$65.00 MXN</span>
+                <button type="button" class="agregar"
+                data-producto="Manzana de Picafresa"
+                data-precio="65">
+                Agregar al carrito
+            </button>
+            </div>
+        </article>
+
+        <!-- TARJETA 4 -->
+        <article class="tarjeta">
+            <img src="imagenes/manzanas5.jpg"
+                 alt="Manzana de Skwinkles">
+            <div class="contenido">
+                <h3>Manzana de Skwinkles</h3>
+                <p>Manzana con dulces tipo Skwinkles, chamoy y Miguelito.</p>
+                <span class="precio">$65.00 MXN</span>
+                <button type="button" class="agregar"
+                data-producto="Manzana de Skwinkles"
+                data-precio="65">
+                Agregar al carrito
+            </button>
+            </div>
+        </article>
+
+        <!-- TARJETA 5 -->
+        <article class="tarjeta">
+            <img src="imagenes/snack mediano.jpg"
+                 alt="Papas y gomitas enchiladas">
+            <div class="contenido">
+                <h3>Snacks</h3>
+                <p>Papas, gomitas enchiladas y cacahuates para combinar sabores.</p>
+                <span class="precio">$30 MXN mediano</span>
+                <button type="button" class="agregar"
+                data-producto="Papas preparadas"
+                data-precio="30">
+                Agregar al carrito
+            </button>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <img src="imagenes/snack grande.jpg"
+                 alt="Papas y gomitas enchiladas">
+            <div class="contenido">
+                <h3>Snacks</h3>
+                <p>Papas, gomitas enchiladas y cacahuates para combinar sabores.</p>
+                <span class="precio">$45 MXN grande</span>
+                <button type="button" class="agregar"
+                data-producto="Papas preparadas"
+                data-precio="45">
+                Agregar al carrito
+            </button>
+            </div>
+        </article>
+
+        <!-- TARJETA 6 -->
+        <article class="tarjeta">
+            <img src="imagenes/paletas.jpg"
+                 alt="Paletas cubiertas de Picafresas">
+            <div class="contenido">
+                <h3>Paletas de Picafresas</h3>
+                <p>Paletas con una cubierta dulce y picosita.</p>
+                <span class="precio">$25.00 MXN</span>
+                <button type="button" class="agregar"
+                data-producto="Paleta cubierta de picafresa"
+                data-precio="25">
+                Agregar al carrito
+            </button>
+            </div>
+        </article>
+
+    </div>
+    <!-- CARRITO DE COMPRAS -->
+<section id="carrito" class="seccion carrito">
+
+    <h2>Mi carrito de compras 🛒</h2>
+
+    <p>Productos agregados:
+        <span id="contador">0</span>
+    </p>
+
+    <ul id="lista-carrito"></ul>
+
+    <p>Total: $<span id="total">0.00</span> MXN</p>
+
+    <button type="button" id="vaciar-carrito">
+        Vaciar carrito
+    </button>
+    <button id="pagar">
+        Finalizar compra
+    </button>
+
+</section>
+    <!-- FIN DEL CONTENEDOR PRINCIPAL -->
+
+    <p class="nota">
+        Los precios pueden variar según el producto.
+    </p>
+</section>
+
+       
+        <article id="articulo" class="seccion articulo">
+            <h2>La importancia de elegir buenos ingredientes</h2>
+            <p>
+                Para preparar un snack de calidad es importante seleccionar
+                manzanas frescas, cuidar la limpieza durante la preparación
+                y mantener los ingredientes en condiciones adecuadas.
+                También es importante presentar los productos de manera
+                ordenada y utilizar empaques apropiados para los alimentos.
+            </p>
+        </article>
+
+       
+        <aside class="informacion">
+            <h2>Información adicional</h2>
+
+            <h3>Horario</h3>
+            <p>Lunes a viernes: 7:00 a. m. a 2:00 p. m.</p>
+
+            <h3>Promoción escolar</h3>
+            <p>Pregunta por nuestros combos y promociones disponibles.</p>
+
+            <h3>Recomendación</h3>
+            <p>Consulta los ingredientes antes de elegir tu producto.</p>
+        </aside>
+
+    </main>
+
+    
+    <footer id="contacto" class="pie">
+        <h2>Contacto</h2>
+        <p><strong>Proyecto:</strong> Manzanas tres Lunas</p>
+        <p><strong>Teléfono:</strong> 5562080139</p>
+        <p><strong>Correo:</strong> contacto:Galeanalunaitannasayuri@gmail.com</p>
+        <p><strong>Dirección:</strong> Chalco Temamatla, Estado de México</p>
+        <p><strong>Redes sociales:</strong> <a href="https://www.instagram.com/moona_pple?rpxt=czhyb3NpZmJrcXF3">Instagram</a></p>
+        <p class="copyright">
+            © 2026 Apple Moon. Proyecto Escolar.
+        </p>
+    </footer>
+
+    <script>
+        const diapositivas = document.querySelectorAll(".diapositiva");
+        let indice = 0;
+
+        function cambiarDiapositiva() {
+            diapositivas[indice].classList.remove("activa");
+
+            indice = (indice + 1) % diapositivas.length;
+
+            diapositivas[indice].classList.add("activa");
+        }
+
+        setInterval(cambiarDiapositiva, 3500);
+    </script>
+<script src="js/script.js"></script>
+
+</script>
+</body>
+</html>
+

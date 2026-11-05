@@ -1,0 +1,66 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Moon Apple</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="titulo-logo">
+            <h1>Moon Apple</h1>
+            <img src="imagenes/logotipo.jpg" alt="Logo de Moon Apple" class="logo">
+        </div>
+
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="seccion">
+            <h2>Contáctanos</h2>
+            <p>¡Gracias por tu interés en Moon Apple!</p>
+            <p>Estamos para atender tus dudas sobre nuestros productos.</p>
+
+            <h3>Correo electrónico</h3>
+            <p>
+                <a href="mailto:TU_CORREO@gmail.com">
+                    TU_CORREO@gmail.com
+                </a>
+            </p>
+
+            <h3>Teléfono</h3>
+            <p>
+                <a href="tel:TU_NUMERO">
+                    TU_NUMERO
+                </a>
+            </p>
+
+            <h3>Ubicación</h3>
+            <p>Chalco, Estado de México</p>
+
+            <h3>Redes sociales</h3>
+            <p>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </p>
+            <p>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </p>
+            <p>
+                <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>© 2026 Moon Apple. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
